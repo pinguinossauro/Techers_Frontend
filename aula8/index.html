@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 115px 200px;
+  background-color: #af4c4c;
+}
+
+</style>
+</head>
+<body>
+
+<button class="button" onmouseover="moveButton(this)">click</button>
+
+<script>
+    function moveButton(x) {
+        marginX = Math.floor(Math.random()*1200)
+        marginY = Math.floor(Math.random()*900)
+
+        x.style.margin = marginY.toString() + 'px ' + marginX.toString() + 'px'
+    }
+</script>
+</body>
+</html>

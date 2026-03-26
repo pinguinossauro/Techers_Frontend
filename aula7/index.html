@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mudar Cor de Fundo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            /* Transição suave de cor */
+            transition: background-color 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecione uma cor de fundo</h1>
+    
+    <!-- Input do tipo color -->
+    <input type="color" id="colorPicker" value="#ffffff">
+
+    <script>
+        // Seleciona o input e o body
+        const colorPicker = document.getElementById('colorPicker');
+        const body = document.body;
+
+        // Adiciona um evento que detecta a mudança
+        colorPicker.addEventListener('input', function() {
+            // Define a cor de fundo do body com o valor do input
+            body.style.backgroundColor = colorPicker.value;
+        });
+    </script>
+ <button input >click aqui</button>
+ 
+</body>
+</html>
