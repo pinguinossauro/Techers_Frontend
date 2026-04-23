@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Alvo HTML/CSS</title>
+<style>
+    /* Estilo do container para centralizar o alvo */
+    .target-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    /* O alvo base (círculo mais externo) */
+    .target {
+        width: 200px;
+        height: 200px;
+        background-color: red; /* Cor externa */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    }
+
+    /* Círculo 2 */
+    .target-2 {
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Círculo 3 */
+    .target-3 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Centro do alvo (bullseye) */
+    .target-center {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50%;
+    }
+</style>
+</head>
+<body>
+
+    <div class="target-container">
+        <div class="target">
+            <div class="target-2">
+                <div class="target-3">
+                    <div class="target-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
