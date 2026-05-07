@@ -1,0 +1,20 @@
+.item{
+    background-color: lightcoral;
+    color: honeydew;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline;
+
+}
+
+.menu-pai{display: flex;
+/*flex-direction: row;
+.item: 15px;*/
+align-items: center;
+justify-content: space-between;
+height: 150px;
+background-color: lightseagreen;
+}
